@@ -1,0 +1,380 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    
+}
+<body>
+
+    <!-- Start Header Area -->
+    <header class="default-header">
+        <div class="menutop-wrap">
+            <div class="menu-top container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <ul class="list">
+                        <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
+                        <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>
+                    </ul>
+                    <ul class="list">
+                        <li><a asp-controller="Login"asp-action="Login">logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" asp-controller="Authentication"asp-action="Index">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#catagory">Category</a></li>
+                        <li><a href="#men">Men</a></li>
+                        <li><a href="#women">Women</a></li>
+                        <li><a href="#latest">latest</a></li>
+                        <!-- Dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Category">Category</a>
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Single">Single</a>
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Cart">Cart</a>
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Checkout">Checkout</a>
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Confirmation">Confirmation</a>
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Tracking">Tracking</a>
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Generic">Generic</a>
+                                <a class="dropdown-item" asp-controller="Authentication"asp-action="Elements">Elements</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center">
+                <div class="col-first">
+                    <h1>Product Checkout</h1>
+                    <nav class="d-flex align-items-center justify-content-start">
+                        <a asp-controller="Authentication"asp-action="Index">Home<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                        <a asp-controller="Authentication"asp-action="Checkout">Product Checkout</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+    <!-- Start Checkout Area -->
+    <div class="container">
+        <div class="checkput-login">
+            <div class="top-title">
+                <p>Returning Customer? <a data-toggle="collapse" href="#checkout-login" aria-expanded="false" aria-controls="checkout-login">Click here to login</a></p>
+            </div>
+            <div class="collapse" id="checkout-login">
+                <div class="checkout-login-collapse d-flex flex-column">
+                    <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+                    <form action="#" class="d-block">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="Username or Email*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username or Email*'" required class="common-input mt-10">
+
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="password" placeholder="Password*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Password*'" required class="common-input mt-10">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap">
+                            <button class="view-btn color-2 mt-20 mr-20"><span>Login</span></button>
+                            <div class="mt-20">
+                                <input type="checkbox" class="pixel-checkbox" id="login-1">
+                                <label for="login-1">Remember me</label>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="#" class="mt-10">Lost your password?</a>
+                </div>
+            </div>
+        </div>
+        <div class="checkput-login mt-20">
+            <div class="top-title">
+                <p>Have a coupon? <a data-toggle="collapse" href="#checkout-cupon" aria-expanded="false" aria-controls="checkout-cupon">Click here to enter your code</a></p>
+            </div>
+            <div class="collapse" id="checkout-cupon">
+                <div class="checkout-login-collapse d-flex flex-column">
+                    <form action="#" class="d-block">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <input type="text" placeholder="Enter coupon code" onfocus="this.placeholder=''" onblur="this.placeholder = 'Enter coupon code'" required class="common-input mt-10">
+                            </div>
+                        </div>
+                        <button class="view-btn color-2 mt-20"><span>Apply Coupon</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Checkout Area -->
+    <!-- Start Billing Details Form -->
+    <div class="container">
+        <form action="#" class="billing-form">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <h3 class="billing-title mt-20 mb-10">Billing Details</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="First name*" onfocus="this.placeholder=''" onblur="this.placeholder = 'First name*'" required class="common-input">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Last name*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Last name*'" required class="common-input">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Company Name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Company Name'" required class="common-input">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Phone number*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Phone number*'" required class="common-input">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" placeholder="Email Address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email Address*'" required class="common-input">
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="sorting">
+                                <select>
+                                    <option value="1">Country*</option>
+                                    <option value="1">Default sorting</option>
+                                    <option value="1">Default sorting</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Address line 01*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Address line 01*'" required class="common-input">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Address line 02*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Address line 02*'" required class="common-input">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Town/City*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Town/City*'" required class="common-input">
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="sorting">
+                                <select>
+                                    <option value="1">District*</option>
+                                    <option value="1">Default sorting</option>
+                                    <option value="1">Default sorting</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Postcode/ZIP" onfocus="this.placeholder=''" onblur="this.placeholder = 'Postcode/ZIP'" class="common-input">
+                        </div>
+                    </div>
+                    <div class="mt-20">
+                        <input type="checkbox" class="pixel-checkbox" id="login-3">
+                        <label for="login-3">Create an account?</label>
+                    </div>
+                    <h3 class="billing-title mt-20 mb-10">Billing Details</h3>
+                    <div class="mt-20">
+                        <input type="checkbox" class="pixel-checkbox" id="login-6">
+                        <label for="login-6">Ship to a different address?</label>
+                    </div>
+                    <textarea placeholder="Order Notes" onfocus="this.placeholder=''" onblur="this.placeholder = 'Order Notes'" required class="common-textarea"></textarea>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="order-wrapper mt-50">
+                        <h3 class="billing-title mb-10">Your Order</h3>
+                        <div class="order-list">
+                            <div class="list-row d-flex justify-content-between">
+                                <div>Product</div>
+                                <div>Total</div>
+                            </div>
+                            <div class="list-row d-flex justify-content-between">
+                                <div>Pixelstore fresh Blackberry</div>
+                                <div>x 02</div>
+                                <div>$720.00</div>
+                            </div>
+                            <div class="list-row d-flex justify-content-between">
+                                <div>Pixelstore fresh Blackberry</div>
+                                <div>x 02</div>
+                                <div>$720.00</div>
+                            </div>
+                            <div class="list-row d-flex justify-content-between">
+                                <div>Pixelstore fresh Blackberry</div>
+                                <div>x 02</div>
+                                <div>$720.00</div>
+                            </div>
+                            <div class="list-row d-flex justify-content-between">
+                                <h6>Subtotal</h6>
+                                <div>$2160.00</div>
+                            </div>
+                            <div class="list-row d-flex justify-content-between">
+                                <h6>Shipping</h6>
+                                <div>Flat rate: $50.00</div>
+                            </div>
+                            <div class="list-row d-flex justify-content-between">
+                                <h6>Total</h6>
+                                <div class="total">$2210.00</div>
+                            </div>
+                            <div class="d-flex align-items-center mt-10">
+                                <input class="pixel-radio" type="radio" id="check" name="brand">
+                                <label for="check" class="bold-lable">Check payments</label>
+                            </div>
+                            <p class="payment-info">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <input class="pixel-radio" type="radio" id="paypal" name="brand">
+                                    <label for="paypal" class="bold-lable">Paypal</label>
+                                </div>
+                                <img src="~/images/pm.jpg" alt="" class="img-fluid">
+                            </div>
+                            <p class="payment-info">Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                            <div class="mt-20 d-flex align-items-start">
+                                <input type="checkbox" class="pixel-checkbox" id="login-4">
+                                <label for="login-4">I’ve read and accept the <a href="#" class="terms-link">terms & conditions*</a></label>
+                            </div>
+                            <button class="view-btn color-2 w-100 mt-20"><span>Proceed to Checkout</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- End Billing Details Form -->
+    <!-- Start Most Search Product Area -->
+    <section class="section-half">
+        <div class="container">
+            <div class="organic-section-title text-center">
+                <h3>Most Searched Products</h3>
+            </div>
+            <div class="row mt-30">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r1.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Blueberry</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $240.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r2.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Cabbage</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r3.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Raspberry</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r4.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Kiwi</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r5.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore Bell Pepper</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $120.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r6.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Blackberry</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $120.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r7.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Brocoli</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $120.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r8.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Carrot</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $120.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r9.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Strawberry</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $240.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r10.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Prixma MG2 Light Inkjet</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $240.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r11.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Cherry</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $240.00 <del>$340.00</del></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-search-product d-flex">
+                        <a href="#"><img src="~/images/r12.jpg" alt=""></a>
+                        <div class="desc">
+                            <a href="#" class="title">Pixelstore fresh Beans</a>
+                            <div class="price"><span class="lnr lnr-tag"></span> $240.00 <del>$340.00</del></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Most Search Product Area -->
+  
+
+    <script src="~/js/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/js/jquery.nice-select.min.js"></script>
+    <script src="~/js/jquery.sticky.js"></script>
+    <script src="~/js/ion.rangeSlider.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
