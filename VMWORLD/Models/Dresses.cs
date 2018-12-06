@@ -7,8 +7,38 @@ namespace VMWORLD.Models
 {
     public class Dresses:Product
     {
-        public string size;
-        public string style;
-
+        public string Dressessize;
+        public string Dressesstyle;
+        public string Dressesdesgin;
+        public string Dressescolor;
     }
+    enum Dressessize
+    {
+        small,
+        medium,
+        large
+    }
+    enum Dressesstyle
+    {
+        none,
+        shortdress,
+        longdress
+    }
+    enum Dressesdesgin
+    {
+        offshoulder,
+        promdress,
+        eveningdress
+    }
+    enum Dressescolor
+    {
+        purple,
+        pink,
+        white,
+        black,
+        brown,
+        blue,
+        babyblue
+    }
+
 }

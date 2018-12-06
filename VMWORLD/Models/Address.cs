@@ -17,7 +17,7 @@ namespace VMWORLD.Models
         public int cityID;
         public Address()
             {
-}
+            }
 
     }
 }

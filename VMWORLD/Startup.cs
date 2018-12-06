@@ -56,7 +56,7 @@ namespace VMWORLD
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Login}/{action=Login}/{id?}");
+                    template: "{controller=Authentication}/{action=Login}/{id?}");
             });
         }
     }

@@ -7,8 +7,35 @@ namespace VMWORLD.Models
 {
     public class Shoes:Product
     {
-        public string size;
-        public string style;
-
+        public string Shoessize;
+        public string Shoesstyle;
+        public string Shoesdesgin;
+        public string Shoescolor;
+    }
+    enum Shoessize
+    {
+        none,
+        small,
+        large
+    }
+    enum Shoesstyle
+    {
+        none,
+        heels,
+        flat
+    }
+    enum Shoesdesgin
+    {
+        none,
+        sneakers,
+        formalshoes
+    }
+    enum Shoescolor
+    {
+        pink,
+        blue,
+        black,
+        brown,
+        white
     }
 }

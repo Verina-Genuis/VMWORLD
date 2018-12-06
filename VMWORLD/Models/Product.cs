@@ -12,27 +12,9 @@ namespace VMWORLD.Models
         double price;
         double taxprice;
         public double stock;
-        enum Tshirtstyle 
-      {
-            None ,
-            full ,
-            half 
-
-}
-        enum Shoesstyle
+     
+      public Product()
         {
-            none,
-            heels,
-            flat
-
-        }
-        enum Dressesstyle
-        {
-            none,
-            promdress,
-            eveningdress
-
-
         }
     }
     
