@@ -60,7 +60,7 @@ namespace VMWORLD.Controllers
             var result = Customers.Login(username, password);
             if (result == true)
             {
-                ViewBag.Message ="Welcome back to our website";
+                ViewBag.Message ="Welcome back, Verina to our website";
                 return View("Index");
             }
             else

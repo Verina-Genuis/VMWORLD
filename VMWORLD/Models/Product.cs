@@ -7,11 +7,11 @@ namespace VMWORLD.Models
 {
     public class Product
     {
-        int ID;
-        string title;
-        double price;
-        double taxprice;
-        public double stock;
+       public int ID;
+       public string title;
+       public double price;
+       public double taxprice;
+       public double stock;
      
       public Product()
         {
