@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,30 +8,30 @@ namespace VMWORLD.Models
 {
     public class Shoes:Product
     {
-        public string Shoessize;
-        public string Shoesstyle;
-        public string Shoesdesgin;
-        public string Shoescolor;
+        public  Shoessize Shoessize;
+        public  Shoesstyle shoesstyle;
+        public  Shoesdesgin Shoesdesgin;
+        public Color Shoescolor;
     }
-    enum Shoessize
+    public enum Shoessize
     {
         none,
         small,
         large
     }
-    enum Shoesstyle
+     public enum Shoesstyle
     {
         none,
         heels,
         flat
     }
-    enum Shoesdesgin
+     public enum Shoesdesgin
     {
         none,
         sneakers,
         formalshoes
     }
-    enum Shoescolor
+   public  enum Shoescolor
     {
         pink,
         blue,

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,30 +8,30 @@ namespace VMWORLD.Models
 {
     public class Tshirt:Product
     {
-        public string Tshirtsize;
-        public string Tshirtstyle;
-        public string TshirtDesgin;
-        public string Tshirtcolor;
+        public  Tshirtsize Tshirtsize;
+        public  Tshirtstyle Tshirtstyle;
+        public  TshirtDesgin TshirtDesgin;
+        public  Color Tshirtcolor;
     }
-    enum Tshirtsize
+   public enum Tshirtsize
     {
         small,
         medium,
         large
     }
-    enum Tshirtstyle
+    public enum Tshirtstyle
     {
         None,
         full,
         half
     }
-    enum TshirtDesgin
+    public enum TshirtDesgin
     {
         none,
         offshoulder,
         casual  
     }
-    enum Tshirtcolor
+   public enum Tshirtcolor
     {
         pink,
         black,

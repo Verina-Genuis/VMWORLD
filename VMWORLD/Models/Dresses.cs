@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,30 +8,31 @@ namespace VMWORLD.Models
 {
     public class Dresses:Product
     {
-        public string Dressessize;
-        public string Dressesstyle;
-        public string Dressesdesgin;
-        public string Dressescolor;
+        public Dressessize Dressessize;
+        public  Dressesstyle Dressesstyle;
+        public  Dressesdesgin Dressesdesgin;
+        public Color Dressescolor;
     }
-    enum Dressessize
+
+    public enum Dressessize
     {
         small,
         medium,
         large
     }
-    enum Dressesstyle
+    public enum Dressesstyle
     {
         none,
         shortdress,
         longdress
     }
-    enum Dressesdesgin
+   public enum Dressesdesgin
     {
         offshoulder,
         promdress,
         eveningdress
     }
-    enum Dressescolor
+   public enum Dressescolor
     {
         purple,
         pink,
